@@ -246,8 +246,8 @@ img {
     filter: invert(80%) sepia(47%) saturate(447%) hue-rotate(354deg) brightness(94%) contrast(89%);
 
     position: absolute;
-    top: 70px;
-    left: 70px;
+    top: 74px;
+    left: 60px;
 
     transform: scale(0%);
 
