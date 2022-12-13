@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="roulette.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ASDF</title>
+</head>
+<body>
+    <div id="main">
+       
+    </div>
+    <div id="lists">
+        <div id="options">
+            <input id="tiles" type="text" oninput="renderTiles(this.value)">
+            <button onclick="stopall()">STOP ALL</button>
+            <button onclick="resetall()">RESET</button>
+        </div>
+        <span id="gifts_text">GIFTS</span>
+        <textarea id="gifts" class="list style" spellcheck="false"
+        oninput="saveToBrowserGifts(this.value)"></textarea>
+        <span id="stolen_text">STOLEN</span>
+        <textarea id="stolen" class="list style" spellcheck="false"
+        oninput="saveToBrowserStolen(this.value)"></textarea>
+    </div>
+    
+<script type="text/javascript">
+    loadFromBrowser()
+</script>
+</body>
+</html>
