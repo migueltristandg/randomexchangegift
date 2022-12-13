@@ -37,7 +37,6 @@ let allWords = document.getElementsByClassName("word")
 let box
 
 function select(id) {
-    console.log('### id', id)
     if (random100(0, 100) < parseInt(document.getElementById('percent' + id).value)) {
         addClassToAll("word_2nd", allWords, id) //steal
         thisImg = document.getElementById('imgS' + id)
